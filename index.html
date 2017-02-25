@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#002b36">
-    <title>NeoDunggeunmo</title>
+    <title>Neo둥근모 프로젝트</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -18,7 +18,7 @@
       <h3>Unicode 표준에 등록된 다양한 문자 제공</h3>
       <p>Neo둥근모의 목표는 한글과 영문/숫자뿐만 아니라 여러가지 Unicode 표준 문자도 지원하는 것입니다. 이와 더불어, 터미널의 셸 프롬프트나 Vim 등의 텍스트 편집기, 또는 Tmux 등의 환경에서 사용 가능한 Powerline 특수기호도 Neo둥근모의 스타일에 맞춰서 제공하고 있습니다. 현재 지원하는 문자들은 <a href="#preview">아래</a>에서 확인하실 수 있습니다.</a>
       <h2><a id="downloads">글꼴 내려받기</a></h2>
-      <p>현재 공식적으로 릴리즈된 최신 버전은 <b>1.0.0</b>입니다. 다운로드 링크와 업데이트 내역은 <a href="https://github.com/Dalgona/neodgm/releases">GitHub의 Releases 페이지</a>를 이용해 주세요.</p>
+      <p>현재 공식적으로 릴리즈된 최신 버전은 <b>1.1.0</b>입니다. 다운로드 링크와 업데이트 내역은 <a href="https://github.com/Dalgona/neodgm/releases">GitHub의 Releases 페이지</a>를 이용해 주세요.</p>
       <h3>최신 스냅샷</h3>
       <p>최신 스냅샷은 수시로 업데이트되는 버전입니다. 최신 스냅샷을 사용하면 마지막 공식 업데이트 이후로 다음 업데이트가 공개되기 전까지 새로 추가된 문자나 변경된 내용을 미리 확인할 수 있지만, 정식 릴리즈 버전에는 없는 여러가지 문제점이 발견될 수 있습니다.</p>
       <p class="dim">최신 스냅샷 다운로드 링크는 아직 준비중입니다.</p>
@@ -30,6 +30,7 @@
       <h3>제공하는 문자 목록</h3>
       <ul>
         <li>C0 Controls and Basic Latin (0000~007F)</li>
+        <li>Latin-1 Supplement (00A1~00AC, 00AE~00FF)</li>
         <li>Hangul Choseong (옛한글 제외, 1100~1112)</li>
         <li>Hangul Jungseong (옛한글 제외, 1161~1175)</li>
         <li>Hangul Jongseong (옛한글 제외, 11A8~11C2)</li>
@@ -53,6 +54,13 @@
       auto pi = &quot;3.141592653589793238462643383279502884197169399&quot;;<br>
       for (const auto &amp;x : *p[foo-&gt;spam]) /* does_it_work? */<br>
       </p>
+      <h3>라틴-1 보충</h3>
+      <p>¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿<br>
+      ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß<br>
+      àáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ</p>
+      <p class="highlight">¡Nice to meet you! ¿How are you today? «I'm ¬fine.»<br>
+      ¢99 £24.49 ¥100 §2.3.3 © Dalgona. NeoDunggeunmo® ±e²×e³÷e¹</p>
+      <p class="highlight">Lorèm ìpsúm dólór ßít ãmet, çònßeçtetür àdìpìßcìng èlìt. Phæsëllùs éléífénd ßît æmét tôrtôr a lòbòrtíß. Nüllâ phäreträ cöñgüe ñüllä, eget ßóllìçìtúðìn ñißi ßagïttïß iñ. Veßtìbülüm mäxïmus lêçtúß ðölör, ët máttìß ãñté égéstæs æç. Séd ultrìçìes ñüñç enïm, ëgët ûltriciès ùrñá låörëët ñöñ. Fúßçè ñêqúê ëràt.</p>
       <h3>괘선, 블록, 점자</h3>
       <p class="highlight">
       ─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿<br>
