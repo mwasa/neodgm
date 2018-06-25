@@ -82,22 +82,5 @@ index.html
 57% &nbsp;12: 34&nbsp;</span>
 </p>
     </div>
-    <script>
-(function () {
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function (e) {
-    let t = e.target;
-    let span = document.getElementById('snapshot_ver');
-    if (t.readyState >= 4 && t.status == 200) {
-      span.textContent = '(버전: ' + t.responseText.trim() + ')';
-    }
-    else {
-      span.textContent = '(최신 스냅샷 버전 정보를 가져올 수 없습니다)';
-    }
-  }
-  xhr.open('get', 'http://neodgm.d.iostream.kr/snapshots/latest-version', true);
-  xhr.send(null);
-})();
-    </script>
   </body>
 </html>
