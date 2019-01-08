@@ -141,10 +141,8 @@ body {
   font-size: 16px;
   line-height: 1em;
   background-color: #002b36;
-}
-
-body * {
-  max-height: 4294967295em;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
