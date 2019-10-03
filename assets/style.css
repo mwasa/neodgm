@@ -1,6 +1,8 @@
 @font-face {
   font-family: '_neodgm';
-  src: url('neodgm.ttf') format('truetype');
+  src: url('neodgm_code.woff2') format('woff2'),
+       url('neodgm_code.woff') format('woff'),
+       url('neodgm_code.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -143,6 +145,7 @@ body {
   background-color: #002b36;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "calt" off;
 }
 
 .wrapper {
@@ -163,4 +166,8 @@ body {
 p {
   width: 640px;
   word-break: keep-all;
+}
+
+.calt-on {
+  font-feature-settings: "calt" on;
 }

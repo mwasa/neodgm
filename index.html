@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#002b36">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Neo둥근모 프로젝트</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <div class="wrapper dark">
-      <h1>Neo둥근모</h1>
+      <h1>Neo둥근모 프로젝트</h1>
       <p><strong>Neo둥근모</strong>는 90년대에 퍼블릭 도메인으로 공개된 비트맵 한글 글꼴 <strong>둥근모꼴</strong>을 트루타입 형식으로 변환하고, 여기에 원래 글꼴에는 없던 여러가지 기호를 추가함으로써 여러 환경에서 유용하게 쓰일 수 있는 글꼴을 만드는 프로젝트입니다.</p>
       <p><a href="#downloads">Neo둥근모 내려받기</a></p>
       <h2>특징</h2>
@@ -16,11 +17,13 @@
       <h3>새로운 영문/숫자 자형</h3>
       <p>원래 둥근모꼴에는 함께 사용되도록 만들어진 영문 비트맵 글꼴도 포함되어 있습니다. 하지만 그 글꼴은 여러모로 자형이 미려하지 않기 때문에 이참에 둥근모꼴의 한글 글자 모양과 어울리는 비트맵 폰트를 나름대로 구상하고 만들어 넣게 되었습니다. 둥근모꼴 특유의 모서리가 둥근 산세리프 스타일을 최대한 표현하는 것에 중점을 두었습니다.</p>
       <h3>Unicode 표준에 등록된 다양한 문자 제공</h3>
-      <p>Neo둥근모의 목표는 한글과 영문/숫자뿐만 아니라 여러가지 Unicode 표준 문자도 지원하는 것입니다. 이와 더불어, 터미널의 셸 프롬프트나 Vim 등의 텍스트 편집기, 또는 Tmux 등의 환경에서 사용 가능한 Powerline 특수기호도 Neo둥근모의 스타일에 맞춰서 제공하고 있습니다. 현재 지원하는 문자들은 <a href="#preview">아래</a>에서 확인하실 수 있습니다.</a>
+      <p>Neo둥근모의 목표는 한글과 영문/숫자뿐만 아니라 여러가지 Unicode 표준 문자도 지원하는 것입니다. 이와 더불어, 터미널의 셸 프롬프트나 Vim 등의 텍스트 편집기, 또는 Tmux 등의 환경에서 사용 가능한 Powerline 특수기호도 Neo둥근모의 스타일에 맞춰서 제공하고 있습니다. 현재 지원하는 문자들은 <a href="#preview">아래</a>에서 확인하실 수 있습니다.</p>
+      <h3>프로그램 코드용 Ligature 제공</h3>
+      <p>Neo둥근모를 기반으로 만들어진 <em>Neo둥근모 Code</em> 글꼴은 OpenType 고급 타이포그래피 기능을 이용하여 두 개 이상의 문자로 이루어진 기호를 하나로 합쳐서 표시할 수 있습니다. 현재 Ligature를 지원하는 기호들은 <a href="#preview-code">아래</a>에서 확인하실 수 있습니다.</p>
       <h2><a id="downloads">글꼴 내려받기</a></h2>
       <p><a href="https://github.com/Dalgona/neodgm/releases">GitHub의 Releases 페이지</a>를 이용해 주세요.</p>
-      <h3>라이센스</h3>
-      <p class="dim">Neo둥근모는 <em>SIL Open Font License</em> 하에 배포됩니다. 라이센스 전문은 <a href="https://github.com/Dalgona/neodgm/blob/master/LICENSE.txt">GitHub</a>에서 보실 수 있으며(영문), 내려받은 TTF 파일의 메타데이터에도 포함되어 있습니다.</p>
+      <h3>라이선스</h3>
+      <p class="dim">Neo둥근모는 <em>SIL Open Font License 1.1</em> 하에 배포됩니다. 라이선스의 전체 내용은 <a href="https://github.com/Dalgona/neodgm/blob/master/LICENSE.txt">GitHub</a>에서 보실 수 있습니다.</p>
     </div>
     <div class="wrapper light">
       <h2><a id="preview">Neo둥근모 미리보기</a></h2>
@@ -106,6 +109,133 @@ index.html
 <span style="color:#859900"></span></span>
 57% &nbsp;12: 34&nbsp;</span>
 </p>
+    </div>
+    <div class="wrapper dark">
+      <h2><a id="preview-code">Neo둥근모 Code 미리보기</a></h2>
+      <p>텍스트 편집기나 터미널 에뮬레이터에서 Ligature를 켜거나 끌 수 있는 옵션을 제공하는 경우에는 <em>Neo둥근모 Code</em> 글꼴만 설치해도 충분합니다. Ligature 기능을 끈 경우에는 Neo둥근모와 동일하게 화면에 표시됩니다.</p>
+      <h3>화살표</h3>
+      <p class="dim" style="margin-bottom: 0">"&lt;="는 대부분의 프로그래밍 언어에서 "작거나 같음" 비교 연산자로 사용되기 때문에 하나의 화살표로 합쳐지지 않습니다.</p>
+      <table cellspacing="8" cellpadding="8">
+        <tbody>
+          <tr>
+            <td>
+              &lt;-<br>
+              &lt;--<br>
+              &lt;---<br>
+              &lt;-------<br>
+            </td>
+            <td>
+              &lt;-&gt;<br>
+              &lt;--&gt;<br>
+              &lt;---&gt;<br>
+              &lt;------&gt;<br>
+            </td>
+            <td>
+              -&gt;<br>
+              --&gt;<br>
+              ---&gt;<br>
+              -------&gt;<br>
+            </td>
+            <td>
+              <span class="dim">&lt;=</span><br>
+              &lt;==<br>
+              &lt;===<br>
+              &lt;=======<br>
+            </td>
+            <td>
+              &lt;=&gt;<br>
+              &lt;==&gt;<br>
+              &lt;===&gt;<br>
+              &lt;=====&gt;<br>
+            </td>
+            <td>
+              =&gt;<br>
+              ==&gt;<br>
+              ===&gt;<br>
+              =======&gt;<br>
+            </td>
+          </tr>
+          <tr class="highlight calt-on">
+            <td>
+              &lt;-<br>
+              &lt;--<br>
+              &lt;---<br>
+              &lt;-------<br>
+            </td>
+            <td>
+              &lt;-&gt;<br>
+              &lt;--&gt;<br>
+              &lt;---&gt;<br>
+              &lt;------&gt;<br>
+            </td>
+            <td>
+              -&gt;<br>
+              --&gt;<br>
+              ---&gt;<br>
+              -------&gt;<br>
+            </td>
+            <td>
+              <span class="dim">&lt;=</span><br>
+              &lt;==<br>
+              &lt;===<br>
+              &lt;=======<br>
+            </td>
+            <td>
+              &lt;=&gt;<br>
+              &lt;==&gt;<br>
+              &lt;===&gt;<br>
+              &lt;======&gt;<br>
+            </td>
+            <td>
+              =&gt;<br>
+              ==&gt;<br>
+              ===&gt;<br>
+              =======&gt;<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 style="margin-bottom: 0">마크업 주석</h2>
+      <table cellspacing="8" cellpadding="8">
+        <tbody>
+          <tr>
+            <td>
+              <span class="dim">&lt;</span><br>
+              <span class="dim">&lt;!</span><br>
+              <span class="dim">&lt;!-</span><br>
+              &lt;!-- <span class="dim">The quick brown fox jumps over the lazy dog</span> --&gt;<br>
+            </td>
+          </tr>
+          <tr class="highlight calt-on">
+            <td>
+              <span class="dim">&lt;</span><br>
+              <span class="dim">&lt;!</span><br>
+              <span class="dim">&lt;!-</span><br>
+              &lt;!-- <span class="dim">The quick brown fox jumps over the lazy dog</span> --&gt;<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 style="margin-bottom: 0">파이프라인 연산자</h3>
+      <table cellspacing="8" cellpadding="8">
+        <tbody>
+          <tr>
+            <td>
+              &lt;||| &lt;|| &lt;| &lt;|&gt; |&gt; ||&gt; |||&gt;<br>
+              <br>
+              <span class="dim">1..10</span> |&gt; <span class="dim">Enum.map(& &1 * 2)</span> |&gt; <span class="dim">Enum.each(&IO.puts/1)</span><br>
+            </td>
+          </tr>
+          <tr class="highlight calt-on">
+            <td>
+              &lt;||| &lt;|| &lt;| &lt;|&gt; |&gt; ||&gt; |||&gt;<br>
+              <br>
+              <span class="dim">1..10</span> |&gt; <span class="dim">Enum.map(& &1 * 2)</span> |&gt; <span class="dim">Enum.each(&IO.puts/1)</span><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
     </div>
   </body>
 </html>
