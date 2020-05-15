@@ -4,7 +4,15 @@ defmodule NeoDGM.GPOS.Pro.Features do
   @spec features() :: FeatureList.t()
   def features do
     %FeatureList{
-      features: []
+      features: [
+        %Feature{
+          tag: "kern",
+          name: "Kerning for Latin letters",
+          lookups: [
+            "Pair adjustments for Latin letters"
+          ]
+        }
+      ]
     }
   end
 end
