@@ -1,8 +1,8 @@
 @font-face {
   font-family: '_neodgm';
-  src: url('neodgm_code.woff2') format('woff2'),
-       url('neodgm_code.woff') format('woff'),
-       url('neodgm_code.ttf') format('truetype');
+  src: url('../fonts/neodgm_code.woff2') format('woff2'),
+       url('../fonts/neodgm_code.woff') format('woff'),
+       url('../fonts/neodgm_code.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
