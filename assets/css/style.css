@@ -10,8 +10,8 @@
 .ayu {
   --color-background: #fafafa;
   --color-foreground: #6c7680;
-  --color-thumbnails-background: #dcdee1;
-  --color-sample-background: #f0f1f2;
+  --color-strong-background: #dcdee1;
+  --color-dim-background: #f0f1f2;
   --color-download-background: #99bf4d;
   --color-download-highlight: #c9d6af;
   --color-download-shadow: #4a592d;
@@ -85,7 +85,7 @@ nav#global-nav ul li:before {
 nav#global-nav li.nav-button a { text-decoration: none; }
 
 div#wrapper > footer {
-  background: var(--color-sample-background);
+  background: var(--color-dim-background);
   padding: 1em 0;
 }
 
@@ -179,17 +179,17 @@ a.download-button:active > span > span {
   border-right: 0.5em solid var(--color-download-highlight);
 }
 
-div.glyph-thumbnails {
-  background-color: var(--color-thumbnails-background);
+section.thumbnails-container {
+  background-color: var(--color-strong-background);
   padding: 0.5em 0;
 }
 
-div.glyph-thumbnails h4 {
+section.thumbnails-container h4 {
   margin: 0.5em;
   color: var(--color-strong);
 }
 
-div.glyph-thumbnails h4:before { content: '\28ff\28ff\0020'; }
+section.thumbnails-container h4:before { content: '\28ff\28ff\0020'; }
 
 div.thumbnail {
   display: inline-block;
@@ -211,8 +211,8 @@ div.thumbnail.glyph {
 }
 
 div.thumbnail.ligature {
-  background-color: var(--color-sample-background);
-  border: 1px solid var(--color-sample-background);
+  background-color: var(--color-dim-background);
+  border: 1px solid var(--color-dim-background);
 }
 
 .calt-off div.thumbnail.ligature {
@@ -224,11 +224,11 @@ div.thumbnail.ligature {
   font-feature-settings: "calt" on;
 }
 
-div.sample-text {
-  background-color: var(--color-sample-background);
+section.sample-text {
+  background-color: var(--color-dim-background);
 }
 
-div.sample-text p {
+section.sample-text p {
   margin: 1em 0;
   padding: 1em 0;
 }
@@ -239,7 +239,8 @@ div.preview-section-contents {
   border-bottom: 1em solid transparent;
 }
 
-input.preview-section-radio {
+input.preview-section-radio[type=radio],
+#try-it input[type=checkbox] {
   display: none;
 }
 
@@ -249,7 +250,8 @@ input.preview-section-radio:checked
   display: block;
 }
 
-div.preview-section-button label {
+div.preview-section-button label,
+#try-it label {
   display: inline-block;
   position: relative;
   padding: 0.5em calc(0.25em - 1px) calc(0.5em - 1px) 0.25em;
@@ -265,7 +267,8 @@ div.preview-section-button label div.anchor {
 }
 
 nav#global-nav li.nav-button a,
-div.preview-section-button label span {
+div.preview-section-button label span,
+#try-it label span {
   display: inline-block;
   padding: calc(0.5em - 1px) calc(0.25em - 1px) calc(0.5em - 1px) calc(0.25em - 1px);
   background-color: var(--color-background);
@@ -284,21 +287,63 @@ div.preview-section-button label span {
 nav#global-nav li.nav-button a:before,
 nav#global-nav li.nav-button a:after,
 div.preview-section-button label span:before,
-div.preview-section-button label span:after { content: '\00a0'; }
+div.preview-section-button label span:after,
+#try-it label span:before,
+#try-it label span:after { content: '\00a0'; }
 
 nav#global-nav li.nav-button.here a,
 input.preview-section-radio:checked
-+ div.preview-section-button label span {
++ div.preview-section-button label span,
+#try-it input[type=checkbox]:checked
++ label span {
   background-color: var(--color-05);
   color: var(--color-background);
+}
+
+#try-it textarea {
+  --foreground: var(--color-foreground);
+  --background: var(--color-dim-background);
+  --shadow: var(--color-dim);
+  --shadow-offset: 1px 1px;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 12rem;
+  border: 1rem solid var(--background);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: '_neodgm', monospace;
+  font-size: 1rem;
+  line-height: 1em;
+  resize: none;
+}
+
+#try-it textarea::placeholder {
+  color: var(--color-dim);
+  text-shadow: none;
+  opacity: 1;
+}
+
+#try-it-x2:checked ~ textarea {
+  --shadow-offset: 2px 2px;
+  font-size: 2rem;
+}
+
+#try-it-shadow:checked ~ textarea { text-shadow: var(--shadow-offset) 0 var(--shadow); }
+
+#try-it-invert:checked ~ textarea {
+  --foreground: var(--color-dim-background);
+  --background: var(--color-foreground);
 }
 
 @media screen and (prefers-color-scheme: dark) {
   .ayu {
     --color-background: #1f2430;
     --color-foreground: #cbccc6;
-    --color-thumbnails-background: #383e4c;
-    --color-sample-background: #232834;
+    --color-strong-background: #383e4c;
+    --color-dim-background: #232834;
     --color-download-background: #a6cc70;
     --color-download-highlight: #d1dfbe;
     --color-download-shadow: #546935;
