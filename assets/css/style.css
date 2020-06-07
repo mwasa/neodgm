@@ -338,6 +338,28 @@ input.preview-section-radio:checked
   --background: var(--color-foreground);
 }
 
+div.guide-example-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+}
+
+div.guide-example-images svg { margin: 0.5em; }
+div.guide-example-images svg.example-good text.label { fill: var(--color-02); }
+div.guide-example-images svg.example-bad text.label { fill: var(--color-01); }
+div.guide-example-images svg .glyph { stroke-width: 1px; }
+
+div.guide-example-images svg.example-good .glyph {
+  fill: var(--color-02);
+  stroke: var(--color-02);
+}
+
+div.guide-example-images svg.example-bad .glyph {
+  fill: var(--color-01);
+  fill-opacity: 0.5;
+  stroke: var(--color-01);
+}
+
 @media screen and (prefers-color-scheme: dark) {
   .ayu {
     --color-background: #1f2430;
